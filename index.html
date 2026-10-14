@@ -314,14 +314,22 @@
               </h1>
 
 
-              <p
-                class="reveal d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
+
+              <p class="reveal d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400
+         font-light leading-relaxed max-w-md mb-10">
+
                 Full Stack Software Developer specializing in
-                <strong class="font-medium text-zinc-700 dark:text-zinc-300">.NET, Angular, Blazor, Azure, and
-                  Cloud-Native Applications</strong>.
-                I design, develop, and deploy scalable solutions that are secure, efficient, and built for real-world
-                business needs.
+                <strong class="font-medium text-zinc-700 dark:text-zinc-300">
+                  C#, .NET, ASP.NET Core, Blazor, Angular, and SQL Server
+                </strong>.
+                I build scalable web applications and SaaS solutions using
+                clean architecture, RESTful APIs, and cloud technologies like
+                <strong class="font-medium text-zinc-700 dark:text-zinc-300">
+                  Microsoft Azure and Docker
+                </strong>,
+                delivering secure, maintainable, and business-focused software.
               </p>
+
               <div class="reveal d3 flex flex-wrap gap-4">
                 <!-- <a href="#work"
                   class="shimmer inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium px-7 py-3.5 rounded-full hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors text-sm">
@@ -412,20 +420,31 @@
               </div>
             </div>
 
+
+            <!-- Developer Profile Image -->
+            <!-- <div class="reveal d2 flex justify-center md:justify-end">
+              <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96
+           max-w-full overflow-hidden rounded-3xl
+           border border-zinc-200 dark:border-zinc-800
+           bg-zinc-100 dark:bg-zinc-900 shadow-xl">
+                <img src="assets/images/Developer3.png" alt="Rakesh Kumar - .NET Full Stack Developer" loading="eager"
+                  fetchpriority="high" class="block w-full h-full object-cover object-center rounded-3xl">
+              </div>
+            </div> -->
+
+
             <div class="reveal d2 flex justify-center md:justify-end">
-              <div class="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
-                <div class="pf w-full h-full rounded-3xl">
-                  <img src="assets/images/image2.png" alt="Rakesh Kumar - .NET Full Stack Developer" loading="eager"
-                    class="w-full h-full object-cover rounded-3xl">
-                </div>
+              <div class="relative w-72 sm:w-80 lg:w-96 max-w-full
+           aspect-[4/5] overflow-hidden rounded-3xl
+           border border-zinc-200 dark:border-zinc-800
+           bg-zinc-100 dark:bg-zinc-900 shadow-xl">
 
-
-                <!-- <div
-                  class="absolute -bottom-4 -left-4 bg-accent text-white font-display font-bold text-sm px-4 py-2.5 rounded-2xl shadow-lg">
-                  Open to Projects
-                </div> -->
+                <img src="assets/images/Developer3.png" alt="Rakesh Kumar - .NET Full Stack Developer" loading="eager"
+                  fetchpriority="high" decoding="async" class="block w-full h-full object-cover object-center">
               </div>
             </div>
+
+
 
           </div>
         </div>
@@ -475,10 +494,10 @@
 
             <!-- Cloud & API Development -->
             <article
-              class="reveal d2 card-h group bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-8 border border-zinc-800 hover:border-accent">
+              class="reveal d2 card-h group bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
 
               <div
-                class="w-12 h-12 flex items-center justify-center bg-zinc-800 dark:bg-zinc-700 rounded-xl mb-6 group-hover:bg-accent/20 transition-colors">
+                class="w-12 h-12 flex items-center justify-center bg-orange-50 dark:bg-zinc-800 rounded-xl mb-6 group-hover:bg-accent/10 transition-colors">
 
                 <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -487,11 +506,11 @@
 
               </div>
 
-              <h3 class="font-display font-bold text-xl text-white mb-3">
+              <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-3">
                 Cloud & API Development
               </h3>
 
-              <p class="text-sm text-zinc-400 leading-relaxed">
+              <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
                 Designing RESTful APIs, JWT Authentication, Role-Based Authorization,
                 Azure deployment, Docker containerization, and cloud-ready architectures
                 for modern enterprise applications.
@@ -548,201 +567,549 @@
               </a>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6">
+            <!-- Projects Section -->
+            <div class="projects-grid grid grid-cols-1 md:grid-cols-2 gap-6">
 
-              <!-- Featured Project -->
+              <!-- ========================================= -->
+              <!-- 1. BLOOD BANK MANAGEMENT SYSTEM           -->
+              <!-- ========================================= -->
               <article
-                class="card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent md:row-span-2">
+                class="project-card card-h reveal d1 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-accent">
 
-                <div class="pf w-full h-64 md:h-80">
-                  <img src="./images/blood-bank-project.jpg" alt="Blood Bank Management System" loading="lazy">
+                <!-- Project Image -->
+                <div class="project-image pf overflow-hidden">
+                  <img src="assets/images/BloodBank.png" alt="Blood Bank Management System" loading="lazy"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
 
-                <div class="p-7">
-                  <div class="flex flex-wrap gap-2 mb-4">
-                    <span
-                      class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">
-                      Healthcare
-                    </span>
+                <div class="project-content p-6 md:p-7">
 
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      ASP.NET Core
-                    </span>
-
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      Blazor
-                    </span>
+                  <!-- Category and Technologies -->
+                  <div class="project-tags flex flex-wrap content-start gap-2 mb-4">
+                    <span class="project-category">Healthcare Technology</span>
+                    <span class="project-tag">ASP.NET Core</span>
+                    <span class="project-tag">Blazor</span>
+                    <span class="project-tag">C#</span>
+                    <span class="project-tag">SQL Server</span>
+                    <span class="project-tag">EF Core</span>
+                    <span class="project-tag">JWT</span>
                   </div>
 
-                  <a href="case-study.html">
-                    <h3 class="font-display font-bold text-2xl text-zinc-900 dark:text-white mb-2">
-                      Blood Bank Management System
-                    </h3>
-                  </a>
+                  <!-- Title -->
+                  <h3
+                    class="project-title font-display font-bold text-xl md:text-2xl text-zinc-900 dark:text-white mb-3 leading-tight">
+                    Blood Bank Management System
+                  </h3>
 
-                  <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-5">
-                    A full-stack healthcare platform built using ASP.NET Core Web API,
-                    Blazor WebAssembly, Entity Framework Core, SQL Server, Docker, and Azure.
-                    The system enables donor registration, blood inventory management,
-                    patient blood requests, approval workflows, and role-based authentication.
-
-                    <br><br>
-
-                    Designed using Clean Architecture with separate API, Core,
-                    Infrastructure, and Client layers for scalability and maintainability.
-
-                    <br><br>
-
-                    Features include donor management, inventory tracking,
-                    patient request workflows, JWT authentication, responsive UI,
-                    and cloud deployment readiness.
+                  <!-- Overview -->
+                  <p class="project-description text-sm text-zinc-500 dark:text-zinc-400 leading-7 mb-5">
+                    A full-stack healthcare application that organizes blood donation
+                    operations, donor records, inventory, and patient blood requests.
+                    It brings essential workflows into one centralized platform to
+                    simplify administration and improve visibility into blood availability.
                   </p>
 
-                  <a href="case-study.html"
-                    class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    View Project
-                  </a>
+                  <!-- Key Capabilities -->
+                  <div class="project-features mb-5">
+                    <h4 class="text-sm font-semibold text-zinc-900 dark:text-white mb-3">
+                      Key Features
+                    </h4>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-droplet text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Blood Inventory
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Manage blood stock records and monitor available inventory.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-hand-holding-medical text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Donor Management
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Maintain donor profiles and registration information.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-file-medical text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Blood Requests
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Organize patient requests and support approval workflows.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-shield-halved text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Secure Access
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Protect application operations using JWT authentication and authorization.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Technical Overview -->
+                  <div
+                    class="project-architecture rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-950/40 p-4 mb-5">
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-layer-group text-accent"></i>
+                      <h4 class="text-sm font-semibold text-zinc-900 dark:text-white">
+                        Technical Overview
+                      </h4>
+                    </div>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-6">
+                      Built with ASP.NET Core Web API, Blazor WebAssembly, Entity Framework
+                      Core, and SQL Server. Clean Architecture separates application
+                      responsibilities, while Docker and Azure support containerization
+                      and cloud deployment workflows.
+                    </p>
+                  </div>
+
+                  <!-- Footer -->
+                  <div class="project-footer pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                    <a href="case-study.html"
+                      class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-900 dark:text-white hover:text-accent transition-colors">
+                      Explore Project
+                      <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                    <p class="text-xs text-zinc-500 dark:text-zinc-500 mt-3">
+                      Healthcare workflows · API development · Secure application design
+                    </p>
+                  </div>
+
                 </div>
               </article>
 
-              <!-- FarmSystem -->
-              <article
-                class="card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
 
-                <div class="pf w-full h-48">
-                  <img src="./images/farmsystem-project.jpg" alt="FarmSystem" loading="lazy">
+              <!-- ========================================= -->
+              <!-- 2. FARMSYSTEM                             -->
+              <!-- ========================================= -->
+              <article
+                class="project-card card-h reveal d2 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-accent">
+
+                <!-- Project Image -->
+                <div class="project-image pf overflow-hidden">
+                  <img src="assets/images/FarmManagement.png" alt="FarmSystem dairy farm management platform"
+                    loading="lazy"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
 
-                <div class="p-6">
-                  <div class="flex flex-wrap gap-2 mb-3">
-                    <span
-                      class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">
-                      Agriculture
-                    </span>
+                <div class="project-content p-6 md:p-7">
 
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      Angular
-                    </span>
-
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      Dapper
-                    </span>
+                  <!-- Category and Technologies -->
+                  <div class="project-tags flex flex-wrap content-start gap-2 mb-4">
+                    <span class="project-category">Agriculture</span>
+                    <span class="project-tag">Angular</span>
+                    <span class="project-tag">ASP.NET Core</span>
+                    <span class="project-tag">C#</span>
+                    <span class="project-tag">Dapper</span>
+                    <span class="project-tag">SQL Server</span>
+                    <span class="project-tag">Azure</span>
                   </div>
 
-                  <a href="case-study.html">
-                    <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-1.5">
-                      FarmSystem
-                    </h3>
-                  </a>
+                  <!-- Title -->
+                  <h3
+                    class="project-title font-display font-bold text-xl md:text-2xl text-zinc-900 dark:text-white mb-3 leading-tight">
+                    FarmSystem – Dairy Farm Management
+                  </h3>
 
-                  <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-                    Dairy farm management platform developed using Angular,
-                    ASP.NET Core Web API, SQL Server, Dapper, Docker, and Azure.
-                    Includes cattle management, milk production tracking,
-                    inventory control, reporting, and secure authentication.
+                  <!-- Overview -->
+                  <p class="project-description text-sm text-zinc-500 dark:text-zinc-400 leading-7 mb-5">
+                    A full-stack farm management application designed to organize daily
+                    dairy operations, cattle records, milk production, and inventory.
+                    The platform combines a responsive Angular interface with a
+                    .NET backend to support operational tracking and reporting.
                   </p>
 
-                  <a href="case-study.html"
-                    class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    View Project
-                  </a>
+                  <!-- Key Capabilities -->
+                  <div class="project-features mb-5">
+                    <h4 class="text-sm font-semibold text-zinc-900 dark:text-white mb-3">
+                      Key Features
+                    </h4>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-cow text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Cattle Management
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Maintain cattle records and organize farm-related information.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-glass-water text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Milk Production
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Track milk production records to monitor daily output.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-boxes-stacked text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Inventory Control
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Organize inventory information and farm resources.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-chart-line text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Reporting & Access
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Support operational reporting and secure application access.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Technical Overview -->
+                  <div
+                    class="project-architecture rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-950/40 p-4 mb-5">
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-layer-group text-accent"></i>
+                      <h4 class="text-sm font-semibold text-zinc-900 dark:text-white">
+                        Technical Overview
+                      </h4>
+                    </div>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-6">
+                      Developed with Angular, ASP.NET Core Web API, C#, Dapper, and SQL
+                      Server. The frontend and backend communicate through REST APIs,
+                      with Docker and Azure incorporated into the deployment workflow.
+                    </p>
+                  </div>
+
+                  <!-- Footer -->
+                  <div class="project-footer pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                    <a href="case-study.html"
+                      class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-900 dark:text-white hover:text-accent transition-colors">
+                      Explore Project
+                      <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                    <p class="text-xs text-zinc-500 dark:text-zinc-500 mt-3">
+                      Farm operations · Data management · Full-stack development
+                    </p>
+                  </div>
+
                 </div>
               </article>
 
 
+              <!-- ========================================= -->
+              <!-- 3. THE DIVINE TASTE                       -->
+              <!-- ========================================= -->
               <article
-                class="card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent">
+                class="project-card card-h reveal d3 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-accent">
 
-                <div class="pf w-full h-48">
-                  <img src="assets/images/thedivinetaste2.png" alt="The Divine Taste Restaurant Platform"
-                    loading="lazy">
+                <!-- Project Image -->
+                <div class="project-image pf overflow-hidden">
+                  <img src="assets/images/thedivinetaste2.png"
+                    alt="The Divine Taste restaurant and food ordering platform" loading="lazy"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
 
-                <div class="p-6">
+                <div class="project-content p-6 md:p-7">
 
-                  <div class="flex flex-wrap gap-2 mb-3">
-
-                    <span
-                      class="text-xs bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700 px-3 py-1 rounded-full">
-                      Food Ordering
-                    </span>
-
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      ASP.NET Core
-                    </span>
-
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      HTML
-                    </span>
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      CSS
-                    </span>
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      Java Script
-                    </span>
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      VCS
-                    </span>
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      MS SQL Server
-                    </span>
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      Dapper
-                    </span>
-
-                    <span
-                      class="text-xs bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-3 py-1 rounded-full">
-                      Azure
-                    </span>
-
+                  <!-- Category and Technologies -->
+                  <div class="project-tags flex flex-wrap content-start gap-2 mb-4">
+                    <span class="project-category">Food Ordering</span>
+                    <span class="project-tag">Angular</span>
+                    <span class="project-tag">ASP.NET Core</span>
+                    <span class="project-tag">C#</span>
+                    <span class="project-tag">Dapper</span>
+                    <span class="project-tag">SQL Server</span>
+                    <span class="project-tag">Azure</span>
                   </div>
 
-                  <a href="https://thedivinetasteui.onrender.com/" target="_blank" rel="noopener noreferrer">
-                    <h3 class="font-display font-bold text-xl text-zinc-900 dark:text-white mb-1.5">
-                      The Divine Taste - Taste The Higher Side Of Life
-                    </h3>
-                  </a>
+                  <!-- Title -->
+                  <h3
+                    class="project-title font-display font-bold text-xl md:text-2xl text-zinc-900 dark:text-white mb-3 leading-tight">
+                    The Divine Taste – Restaurant & Food Ordering
+                  </h3>
 
-                  <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-                    A modern restaurant and online food ordering platform built using
-                    Angular, ASP.NET Core Web API, SQL Server, Dapper, Docker, and Azure.
-                    Features include menu management, customer authentication, online
-                    ordering, order tracking, secure payment integration, and an
-                    admin dashboard for restaurant operations.
+                  <!-- Overview -->
+                  <p class="project-description text-sm text-zinc-500 dark:text-zinc-400 leading-7 mb-5">
+                    A restaurant and online food ordering platform that brings menu
+                    browsing, customer accounts, order placement, and order tracking
+                    into a unified experience. Its web interface and backend services
+                    support customer interactions and restaurant administration.
                   </p>
 
-                  <!-- <a href="https://thedivinetasteui.onrender.com/" target="_blank" rel="noopener noreferrer"
-                    class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nl">
-                    View Project →
-                  </a> -->
+                  <!-- Key Capabilities -->
+                  <div class="project-features mb-5">
+                    <h4 class="text-sm font-semibold text-zinc-900 dark:text-white mb-3">
+                      Key Features
+                    </h4>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-utensils text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Menu Management
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Organize menu items and present food options to customers.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-user-check text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Customer Accounts
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Support customer authentication and account-based access.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-bag-shopping text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Online Ordering
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Enable customers to place orders through the web interface.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-clipboard-check text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Orders & Administration
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Support order tracking and restaurant management workflows.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Technical Overview -->
+                  <div
+                    class="project-architecture rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-950/40 p-4 mb-5">
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-layer-group text-accent"></i>
+                      <h4 class="text-sm font-semibold text-zinc-900 dark:text-white">
+                        Technical Overview
+                      </h4>
+                    </div>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-6">
+                      Built using Angular, ASP.NET Core Web API, C#, Dapper, and SQL
+                      Server. A REST API-based architecture connects the frontend
+                      with backend services, while cloud hosting supports deployment
+                      of the application.
+                    </p>
+                  </div>
+
+                  <!-- Footer -->
+                  <div class="project-footer pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                    <div class="flex flex-wrap items-center gap-x-5 gap-y-3">
+                      <a href="https://thedivinetasteui.onrender.com/" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-900 dark:text-white hover:text-accent transition-colors">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Live Project
+                      </a>
+
+                      <!-- <a href="https://github.com/im-rakesh0827/TheDivineTasteBackend" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-900 dark:text-white hover:text-accent transition-colors">
+                        <i class="fa-brands fa-github"></i>
+                        Source Code
+                      </a> -->
+                    </div>
+
+                    <p class="text-xs text-zinc-500 dark:text-zinc-500 mt-3">
+                      Restaurant technology · Online ordering · API development
+                    </p>
+                  </div>
+
+                </div>
+              </article>
 
 
-                  <div class="flex items-center gap-6">
-                    <a href="https://thedivinetasteui.onrender.com/" target="_blank"
-                      class="inline-flex items-center gap-2 text-sm font-medium hover:text-accent transition-colors">
+              <!-- ========================================= -->
+              <!-- 4. TENANTVERSE                            -->
+              <!-- ========================================= -->
+              <article
+                class="project-card card-h reveal d4 group rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-accent">
 
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                      View Project
-                    </a>
-                    <a href="https://github.com/im-rakesh0827/TheDivineTasteBackend" target="_blank"
-                      class="inline-flex items-center gap-2 text-sm font-medium hover:text-accent transition-colors">
-                      <i class="fa-brands fa-github"></i>
-                      Source Code
-                    </a>
+                <!-- Project Image -->
+                <div class="project-image pf overflow-hidden">
+                  <img src="assets/images/TenantVerseRental.png" alt="TenantVerse rental property management SaaS"
+                    loading="lazy"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
 
+                <div class="project-content p-6 md:p-7">
+
+                  <!-- Category and Technologies -->
+                  <div class="project-tags flex flex-wrap content-start gap-2 mb-4">
+                    <span class="project-category">SaaS Platform</span>
+                    <span class="project-tag">.NET 8</span>
+                    <span class="project-tag">Blazor</span>
+                    <span class="project-tag">ASP.NET Core API</span>
+                    <span class="project-tag">C#</span>
+                    <span class="project-tag">Dapper</span>
+                    <span class="project-tag">SQL Server</span>
+                    <span class="project-tag">Razorpay</span>
+                  </div>
+
+                  <!-- Title -->
+                  <h3
+                    class="project-title font-display font-bold text-xl md:text-2xl text-zinc-900 dark:text-white mb-3 leading-tight">
+                    TenantVerse – Rental Property Management SaaS
+                  </h3>
+
+                  <!-- Overview -->
+                  <p class="project-description text-sm text-zinc-500 dark:text-zinc-400 leading-7 mb-5">
+                    A subscription-based property management platform built to help
+                    landlords organize properties, units, tenant records, rental invoices,
+                    and payment tracking. Automated email reminders and subscription
+                    billing support a more structured rental management workflow.
+                  </p>
+
+                  <!-- Key Capabilities -->
+                  <div class="project-features mb-5">
+                    <h4 class="text-sm font-semibold text-zinc-900 dark:text-white mb-3">
+                      Key Features
+                    </h4>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-building text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Property & Unit Management
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Organize properties, rental units, and occupancy information.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-users text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Tenant Management
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Maintain tenant records and rental-related information.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-file-invoice-dollar text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Invoicing & Payments
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Generate rental invoices and monitor payment records.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-bell text-accent mt-1"></i>
+                        <div>
+                          <h5 class="text-sm font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                            Reminders & Subscriptions
+                          </h5>
+                          <p class="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            Schedule email reminders and manage SaaS subscription payments.
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Technical Overview -->
+                  <div
+                    class="project-architecture rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-950/40 p-4 mb-5">
+                    <div class="flex items-center gap-2 mb-2">
+                      <i class="fa-solid fa-layer-group text-accent"></i>
+                      <h4 class="text-sm font-semibold text-zinc-900 dark:text-white">
+                        Technical Overview
+                      </h4>
+                    </div>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-6">
+                      Developed with .NET 8, Blazor Interactive Server, ASP.NET Core Web
+                      API, Dapper, and SQL Server using a layered application architecture.
+                      JWT authentication, role-based access, background email processing,
+                      Razorpay webhook handling, and cloud deployment support the platform.
+                    </p>
+                  </div>
+
+                  <!-- Footer -->
+                  <div class="project-footer pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                    <div class="flex flex-wrap items-center gap-x-5 gap-y-3">
+                      <a href="https://tenantverse.runasp.net/" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-900 dark:text-white hover:text-accent transition-colors">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Live Project
+                      </a>
+
+                      <!-- <a href="https://github.com/im-rakesh0827/TenantVerse" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 text-sm font-semibold text-zinc-900 dark:text-white hover:text-accent transition-colors">
+                        <i class="fa-brands fa-github"></i>
+                        Source Code
+                      </a> -->
+                    </div>
+
+                    <p class="text-xs text-zinc-500 dark:text-zinc-500 mt-3">
+                      SaaS development · Rental operations · Subscription billing
+                    </p>
                   </div>
 
                 </div>
@@ -762,12 +1129,28 @@
 
 
             <!-- Profile Image -->
-            <div class="reveal order-2 md:order-1">
+            <!-- <div class="reveal order-2 md:order-1">
               <div class="pf w-full aspect-square max-w-sm mx-auto rounded-3xl overflow-hidden shadow-xl">
-                <img src="/assets/images/image1.jpeg" alt="Rakesh Kumar - .NET Full Stack Developer" loading="lazy"
+                <img src="/assets/images/Developer.png" alt="Rakesh Kumar - .NET Full Stack Developer" loading="lazy"
                   class="w-full h-full object-cover">
               </div>
+            </div> -->
+
+
+            <!-- Developer Image -->
+
+            <div class="reveal order-2 md:order-1 flex justify-center">
+              <div class="w-full max-w-[560px] overflow-hidden rounded-3xl
+           bg-zinc-100 dark:bg-zinc-900
+           border border-zinc-200 dark:border-zinc-800
+           shadow-xl">
+
+                <img src="assets/images/Developer1.png" alt="Rakesh Kumar — .NET Full Stack Developer" loading="lazy"
+                  decoding="async" class="block w-full" style="position: static; height: auto; max-height: none;">
+              </div>
             </div>
+
+
 
             <!-- About Content -->
             <div class="order-1 md:order-2">
@@ -881,63 +1264,10 @@
               </p>
             </div>
 
-            <!------------------------TIMELINE------------------------->
+            <!------------------------ TIMELINE ------------------------->
             <div class="career-timeline">
 
-              <!-------------------------- Education ----------------------------->
-              <div class="timeline-item right reveal">
-                <div class="timeline-dot">🎓</div>
-
-                <div class="timeline-card education-card">
-                  <span class="timeline-year">2018 - 2022</span>
-
-                  <h4>Bachelor of Technology (Computer Science & Engineering)</h4>
-
-                  <div class="timeline-tags">
-                    <span class="timeline-badge">
-                      🏛 Sershah Engineering College, Sasaram
-                    </span>
-
-                    <span class="timeline-badge">
-                      🎓 Aryabhatta Knowledge University, Patna
-                    </span>
-                  </div>
-
-                  <p>
-                    Developed a strong foundation in software engineering,
-                    object-oriented programming, data structures, algorithms,
-                    database management systems, computer networks, and operating systems.
-                    This academic journey laid the groundwork for my transition into
-                    professional software development.
-                  </p>
-                </div>
-              </div>
-
-              <!-------------------------- Training ----------------------------->
-              <div class="timeline-item right reveal">
-                <div class="timeline-dot">📚</div>
-
-                <div class="timeline-card">
-                  <span class="timeline-year">Jul 2022 - Jan 2023</span>
-
-                  <h4>DSA & Software Development</h4>
-
-                  <div class="timeline-tags">
-                    <span class="timeline-badge">🎯 Udemy</span>
-                    <span class="timeline-badge">💻 Trainee</span>
-                  </div>
-
-                  <p>
-                    Developed strong problem-solving and analytical skills through extensive
-                    practice of Data Structures and Algorithms. Gained hands-on experience in
-                    software development, Java, SQL, HTML, and Object-Oriented Programming (OOP)
-                    concepts while building academic and personal projects, laying a solid
-                    foundation for a career in software engineering.
-                  </p>
-                </div>
-              </div>
-
-              <!-------------------------- Professional Experience ----------------------------->
+              <!---------------- Professional Experience ---------------->
               <div class="timeline-item right reveal">
                 <div class="timeline-dot">💼</div>
 
@@ -974,68 +1304,103 @@
                   <div class="flex flex-wrap gap-2" role="list" aria-label="Skills">
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      C#
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">C#</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      ASP.NET Core
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">ASP.NET
+                      Core</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      Blazor
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Blazor</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      Angular
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Angular</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      SQL Server
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">SQL
+                      Server</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      Entity Framework Core
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Entity
+                      Framework Core</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      Dapper
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Dapper</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      Azure
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Azure</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      Docker
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Docker</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      Git
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Git</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      REST APIs
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">REST
+                      APIs</span>
 
                     <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">
-                      JWT Authentication
-                    </span>
+                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">JWT
+                      Authentication</span>
 
                   </div>
                 </div>
               </div>
+
+              <!---------------- Training ---------------->
+              <div class="timeline-item right reveal">
+                <div class="timeline-dot">📚</div>
+
+                <div class="timeline-card">
+                  <span class="timeline-year">Jul 2022 - Jan 2023</span>
+
+                  <h4>DSA & Software Development</h4>
+
+                  <div class="timeline-tags">
+                    <span class="timeline-badge">🎯 Udemy</span>
+                    <span class="timeline-badge">💻 Trainee</span>
+                  </div>
+
+                  <p>
+                    Developed strong problem-solving and analytical skills through extensive
+                    practice of Data Structures and Algorithms. Gained hands-on experience in
+                    software development, Java, SQL, HTML, and Object-Oriented Programming (OOP)
+                    concepts while building academic and personal projects, laying a solid
+                    foundation for a career in software engineering.
+                  </p>
+                </div>
+              </div>
+
+              <!---------------- Education ---------------->
+              <div class="timeline-item right reveal">
+                <div class="timeline-dot">🎓</div>
+
+                <div class="timeline-card education-card">
+                  <span class="timeline-year">2018 - 2022</span>
+
+                  <h4>Bachelor of Technology (Computer Science & Engineering)</h4>
+
+                  <div class="timeline-tags">
+                    <span class="timeline-badge">
+                      🏛 Sershah Engineering College, Sasaram
+                    </span>
+
+                    <span class="timeline-badge">
+                      🎓 Aryabhatta Knowledge University, Patna
+                    </span>
+                  </div>
+
+                  <p>
+                    Developed a strong foundation in software engineering,
+                    object-oriented programming, data structures, algorithms,
+                    database management systems, computer networks, and operating systems.
+                    This academic journey laid the groundwork for my transition into
+                    professional software development.
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -1067,7 +1432,8 @@
           <div class="grid md:grid-cols-3 gap-6 mb-16">
 
             <!-- Blood Bank -->
-            <div class="bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800">
+            <div
+              class="bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
 
               <div class="text-4xl font-bold text-accent mb-4">01</div>
 
@@ -1083,15 +1449,16 @@
             </div>
 
             <!-- Farm System -->
-            <div class="bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-8 border border-zinc-800">
+            <div
+              class="bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
 
               <div class="text-4xl font-bold text-accent mb-4">02</div>
 
-              <h3 class="font-bold text-xl text-white mb-3">
+              <h3 class="font-bold text-xl text-zinc-900 dark:text-white mb-3">
                 Farm Management System
               </h3>
 
-              <p class="text-sm text-zinc-400 leading-relaxed">
+              <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
                 Developed a scalable farm management platform with Angular,
                 ASP.NET Core Web API, JWT authentication,
                 OTP-based password reset, and profile management.
@@ -1099,7 +1466,8 @@
             </div>
 
             <!-- Enterprise Apps -->
-            <div class="bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800">
+            <div
+              class="bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
 
               <div class="text-4xl font-bold text-accent mb-4">03</div>
 
@@ -1118,14 +1486,16 @@
 
           <!-- Feedback Section -->
           <div class="mb-12">
+
             <h3 class="font-display font-bold text-3xl text-zinc-900 dark:text-white mb-8 text-left">
               Professional Feedback
             </h3>
 
             <div class="grid md:grid-cols-3 gap-6">
 
+              <!-- Feedback 1 -->
               <blockquote
-                class="bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-7 border border-zinc-100 dark:border-zinc-800">
+                class="bg-white dark:bg-zinc-900 rounded-2xl p-7 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
 
                 <p class="text-sm italic text-zinc-600 dark:text-zinc-400 leading-relaxed mb-5">
                   "Demonstrated strong problem-solving skills and delivered
@@ -1137,34 +1507,37 @@
                     Senior Technical Lead
                   </h4>
 
-                  <p class="text-xs text-zinc-500">
+                  <p class="text-xs text-zinc-500 dark:text-zinc-400">
                     Enterprise Application Project
                   </p>
                 </div>
 
               </blockquote>
 
-              <blockquote class="bg-zinc-900 dark:bg-zinc-800 rounded-2xl p-7 border border-zinc-800">
+              <!-- Feedback 2 -->
+              <blockquote
+                class="bg-white dark:bg-zinc-900 rounded-2xl p-7 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
 
-                <p class="text-sm italic text-zinc-400 leading-relaxed mb-5">
+                <p class="text-sm italic text-zinc-600 dark:text-zinc-400 leading-relaxed mb-5">
                   "Delivered clean, maintainable code and successfully implemented
                   authentication, authorization, and API integrations."
                 </p>
 
                 <div>
-                  <h4 class="font-medium text-white">
+                  <h4 class="font-medium text-zinc-900 dark:text-white">
                     Project Stakeholder
                   </h4>
 
-                  <p class="text-xs text-zinc-500">
+                  <p class="text-xs text-zinc-500 dark:text-zinc-400">
                     Healthcare Management System
                   </p>
                 </div>
 
               </blockquote>
 
+              <!-- Feedback 3 -->
               <blockquote
-                class="bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-7 border border-zinc-100 dark:border-zinc-800">
+                class="bg-white dark:bg-zinc-900 rounded-2xl p-7 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
 
                 <p class="text-sm italic text-zinc-600 dark:text-zinc-400 leading-relaxed mb-5">
                   "Strong understanding of full-stack development with Angular,
@@ -1176,7 +1549,7 @@
                     Development Team
                   </h4>
 
-                  <p class="text-xs text-zinc-500">
+                  <p class="text-xs text-zinc-500 dark:text-zinc-400">
                     Full Stack Development Project
                   </p>
                 </div>
@@ -1185,6 +1558,7 @@
 
             </div>
           </div>
+
 
           <!-- Stats -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
@@ -1248,7 +1622,7 @@
               class="reveal d1 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent">
 
               <div class="pf w-full h-44">
-                <img src="assets/images/blog-dotnet.jpg" alt=".NET Architecture" loading="lazy">
+                <img src="assets/images/Layered.NETCore.png" alt=".NET Architecture" loading="lazy">
               </div>
 
               <div class="p-6">
@@ -1283,8 +1657,10 @@
             <article
               class="reveal d2 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent">
 
-              <div class="pf w-full h-44">
-                <img src="assets/images/blog-angular.jpg" alt="Angular Development" loading="lazy">
+              <div class="pf w-full h-44 overflow-hidden">
+                <img src="assets/images/JWTRoleBasedAuthentication.png"
+                  alt="JWT Authentication and Role-Based Authorization" loading="lazy" class="block w-full h-full"
+                  style="object-fit: fill; object-position: center;">
               </div>
 
               <div class="p-6">
@@ -1320,7 +1696,7 @@
               class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent">
 
               <div class="pf w-full h-44">
-                <img src="assets/images/blog-azure.jpg" alt="Azure Deployment" loading="lazy">
+                <img src="assets/images/AzureCloud.png" alt="Azure Deployment" loading="lazy">
               </div>
 
               <div class="p-6">
@@ -1356,7 +1732,7 @@
               class="reveal d3 card-h group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-all">
 
               <div class="pf w-full h-44">
-                <img src="assets/images/blog-azure-docker.jpg" alt="Open Source Contribution" loading="lazy"
+                <img src="assets/images/OpenSource.png" alt="Open Source Contribution" loading="lazy"
                   class="w-full h-full object-cover">
               </div>
 
