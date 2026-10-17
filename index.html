@@ -1790,9 +1790,10 @@
                 <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-white leading-tight mb-5">Let's
                   work together</h2>
                 <p class="reveal d2 text-zinc-400 leading-relaxed mb-8">
-                  I specialize in building scalable web applications using ASP.NET Core, Angular, Blazor, Dapper, Azure,
-                  and Docker. Whether you need a new application, cloud deployment, system modernization, or technical
-                  consultation, let's connect and discuss your project.
+                  Have a project in mind or need support with an existing application?
+                  Whether you need custom development, API integration, cloud deployment,
+                  or system modernization, let’s discuss your goals and how I can help.
+                  Share a few details below to start the conversation.
                 </p>
 
                 <div class="reveal d3 flex flex-col gap-4">
@@ -1833,7 +1834,7 @@
               </div>
 
               <div class="reveal d2">
-                <form action="#" method="POST" novalidate>
+                <form id="contact-form" novalidate>
                   <div class="flex flex-col gap-4">
                     <div class="grid sm:grid-cols-2 gap-4">
                       <div>
@@ -1864,8 +1865,22 @@
                     </div>
                     <button type="submit"
                       class="shimmer w-full bg-accent text-white font-display font-bold text-sm py-3.5 rounded-xl hover:bg-accent-light transition-colors">
-                      Send message →
+                      Prepare email →
                     </button>
+
+                    <button type="button" id="copy-message"
+                      class="w-full border border-zinc-700 text-zinc-300 text-sm py-3 rounded-xl hover:bg-zinc-800 transition-colors">
+                      Copy message
+                    </button>
+
+                    <p id="form-status" role="status" aria-live="polite" class="text-xs text-zinc-400 leading-relaxed">
+                      Review and send your message from your email app.
+                    </p>
+
+                    <!-- Shown if automatic clipboard copying is unavailable -->
+                    <textarea id="email-draft" readonly hidden rows="8" aria-label="Email draft for manual copying"
+                      class="w-full bg-zinc-800 border border-zinc-700 text-white text-sm rounded-xl px-4 py-3">
+</textarea>
                   </div>
                 </form>
               </div>
@@ -1911,3 +1926,115 @@
   </body>
 
 </html>
+
+<script>
+    (() => {
+      const form = document.getElementById("contact-form");
+
+      if (!form) return;
+
+      const recipient = "acousticrakesh0827@gmail.com";
+
+      const name = form.elements.namedItem("name");
+      const email = form.elements.namedItem("email");
+      const subject = form.elements.namedItem("subject");
+      const message = form.elements.namedItem("message");
+
+      const status = document.getElementById("form-status");
+      const copyButton = document.getElementById("copy-message");
+      const preview = document.getElementById("email-draft");
+
+      // Clear custom validation when the visitor edits these fields.
+      [name, message].forEach(field => {
+        field.addEventListener("input", () => {
+          field.setCustomValidity("");
+        });
+      });
+
+      function prepareDraft() {
+        // Reject names or messages containing only spaces.
+        name.setCustomValidity(
+          name.value.trim() ? "" : "Please enter your name."
+        );
+
+        message.setCustomValidity(
+          message.value.trim() ? "" : "Please enter a message."
+        );
+
+        email.value = email.value.trim();
+
+        // Check required fields and the existing type="email" input.
+        if (!form.reportValidity()) {
+          status.textContent = "Please check the highlighted fields.";
+          return null;
+        }
+
+        return {
+          subject:
+            subject.value.replace(/[\r\n]+/g, " ").trim() ||
+            "Portfolio project enquiry",
+
+          body: [
+            "Hello Rakesh,",
+            "",
+            `Name: ${name.value.trim()}`,
+            `Email: ${email.value}`,
+            "",
+            "Message:",
+            message.value.trim()
+          ].join("\n").replace(/\r\n|\r|\n/g, "\r\n")
+        };
+      }
+
+      // Prepare a draft in the visitor's email app.
+      form.addEventListener("submit", event => {
+        event.preventDefault();
+
+        const draft = prepareDraft();
+
+        if (!draft) return;
+
+        status.textContent =
+          "Review and send the draft in your email app. " +
+          "If nothing opens, use Copy message.";
+
+        window.location.href =
+          `mailto:${recipient}` +
+          `?subject=${encodeURIComponent(draft.subject)}` +
+          `&body=${encodeURIComponent(draft.body)}`;
+      });
+
+      // Copy the complete draft, with a manual-copy fallback.
+      copyButton.addEventListener("click", async () => {
+        const draft = prepareDraft();
+
+        if (!draft) return;
+
+        const text =
+          `To: ${recipient}\r\n` +
+          `Subject: ${draft.subject}\r\n\r\n` +
+          draft.body;
+
+        try {
+          if (!navigator.clipboard?.writeText) {
+            throw new Error("Clipboard unavailable");
+          }
+
+          await navigator.clipboard.writeText(text);
+
+          preview.hidden = true;
+          status.textContent =
+            "Draft copied. Paste it into your email app and send it.";
+        } catch {
+          preview.value = text;
+          preview.hidden = false;
+          preview.focus();
+          preview.select();
+
+          status.textContent =
+            "Copy the selected draft with Ctrl+C or Cmd+C, " +
+            "then paste it into your email app.";
+        }
+      });
+    })();
+</script>
