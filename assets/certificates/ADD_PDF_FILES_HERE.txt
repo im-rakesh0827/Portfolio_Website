@@ -1,0 +1,1 @@
+Add your real certificate PDF files here, then set each document href in assets/js/certifications.js. The screenshots supplied for this task contain file lists, so no original certificate PDFs are bundled.
