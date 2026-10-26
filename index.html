@@ -26,6 +26,10 @@
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/common.js"></script>
+    <link rel="stylesheet" href="./assets/css/career-journey.css">
+    <script src="./assets/js/career-journey.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/certifications.css">
+    <script src="./assets/js/certifications.js" defer></script>
 
     <script>
       tailwind.config = {
@@ -218,6 +222,15 @@
           <li><a href="#about"
               class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
               :class="s==='about'?'on !text-zinc-900 dark:!text-white':''">About</a></li>
+          <li>
+            <a href="#certifications"
+              class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+              :class="s === 'certifications'
+       ? 'on !text-zinc-900 dark:!text-white'
+       : ''" @click="s = 'certifications'">
+              Certifications
+            </a>
+          </li>
           <li><a href="#highlights"
               class="nl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
               :class="s==='highlights'?'on !text-zinc-900 dark:!text-white':''">Highlights</a></li>
@@ -278,6 +291,12 @@
               class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Work</a></li>
           <li><a href="#about" @click="mm=false"
               class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">About</a></li>
+          <li>
+            <a href="#certifications" @click="mm=false"
+              class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">
+              Certifications
+            </a>
+          </li>
           <li><a href="#highlights" @click="mm=false"
               class="block text-zinc-700 dark:text-zinc-300 hover:text-accent transition-colors">Highlights</a></li>
           <li><a href="#blog" @click="mm=false"
@@ -1250,162 +1269,18 @@
           </div>
 
           <!-- Career Journey Timeline -->
-          <div class="mt-28">
-            <div class="text-left mb-20">
-              <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">
-                Career Journey
-              </p>
-              <h3 class="reveal font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white mb-4">
-                Education & Experience
-              </h3>
-              <p class="reveal text-zinc-500 dark:text-zinc-400 mx-auto">
-                A journey of continuous learning, growth, and building scalable software
-                solutions using modern Microsoft technologies.
-              </p>
-            </div>
-
-            <!------------------------ TIMELINE ------------------------->
-            <div class="career-timeline">
-
-              <!---------------- Professional Experience ---------------->
-              <div class="timeline-item right reveal">
-                <div class="timeline-dot">💼</div>
-
-                <div class="timeline-card">
-                  <span class="timeline-year">Feb 2023 - Oct 2025</span>
-
-                  <h4>Software Developer</h4>
-
-                  <div class="timeline-tags">
-                    <span class="timeline-badge">
-                      🏢 Kavayah IT Solutions Pvt. Ltd.
-                    </span>
-
-                    <span class="timeline-badge">
-                      📍 Hyderabad, Telangana
-                    </span>
-
-                    <span class="timeline-badge">
-                      ⏱ Full-Time
-                    </span>
-                  </div>
-
-                  <p>
-                    Worked as a Software Developer, contributing to the design, development,
-                    and maintenance of enterprise-grade applications in the financial and legal
-                    domains. Developed scalable backend services and RESTful APIs using ASP.NET Core,
-                    C#, and SQL Server while following clean architecture and best development practices.
-                    Collaborated closely with cross-functional teams to deliver secure, high-performance
-                    solutions, optimize application performance, and enhance user experience. Actively
-                    participated in requirement analysis, code reviews, bug fixing, and deployment
-                    processes, ensuring reliable and maintainable software delivery.
-                  </p>
-
-                  <div class="flex flex-wrap gap-2" role="list" aria-label="Skills">
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">C#</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">ASP.NET
-                      Core</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Blazor</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Angular</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">SQL
-                      Server</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Entity
-                      Framework Core</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Dapper</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Azure</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Docker</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">Git</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">REST
-                      APIs</span>
-
-                    <span role="listitem"
-                      class="stag text-sm bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 px-3.5 py-1.5 rounded-full hover:border-accent">JWT
-                      Authentication</span>
-
-                  </div>
-                </div>
-              </div>
-
-              <!---------------- Training ---------------->
-              <div class="timeline-item right reveal">
-                <div class="timeline-dot">📚</div>
-
-                <div class="timeline-card">
-                  <span class="timeline-year">Jul 2022 - Jan 2023</span>
-
-                  <h4>DSA & Software Development</h4>
-
-                  <div class="timeline-tags">
-                    <span class="timeline-badge">🎯 Udemy</span>
-                    <span class="timeline-badge">💻 Trainee</span>
-                  </div>
-
-                  <p>
-                    Developed strong problem-solving and analytical skills through extensive
-                    practice of Data Structures and Algorithms. Gained hands-on experience in
-                    software development, Java, SQL, HTML, and Object-Oriented Programming (OOP)
-                    concepts while building academic and personal projects, laying a solid
-                    foundation for a career in software engineering.
-                  </p>
-                </div>
-              </div>
-
-              <!---------------- Education ---------------->
-              <div class="timeline-item right reveal">
-                <div class="timeline-dot">🎓</div>
-
-                <div class="timeline-card education-card">
-                  <span class="timeline-year">2018 - 2022</span>
-
-                  <h4>Bachelor of Technology (Computer Science & Engineering)</h4>
-
-                  <div class="timeline-tags">
-                    <span class="timeline-badge">
-                      🏛 Sershah Engineering College, Sasaram
-                    </span>
-
-                    <span class="timeline-badge">
-                      🎓 Aryabhatta Knowledge University, Patna
-                    </span>
-                  </div>
-
-                  <p>
-                    Developed a strong foundation in software engineering,
-                    object-oriented programming, data structures, algorithms,
-                    database management systems, computer networks, and operating systems.
-                    This academic journey laid the groundwork for my transition into
-                    professional software development.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
+          <div id="career-journey-mount"></div>
 
         </div>
       </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="pt-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div id="certifications-mount"></div>
+        </div>
+      </section>
+
 
 
       <!-- ═══ TESTIMONIALS ═══ -->
@@ -1590,6 +1465,239 @@
                 Commitment
               </p>
             </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Personal & Professional Gallery -->
+      <section id="gallery" class="py-24 bg-zinc-50/70 dark:bg-zinc-950/40">
+        <div class="max-w-6xl mx-auto px-6">
+
+          <!-- Section Header -->
+          <div class="mb-12">
+            <p class="reveal text-xs font-semibold text-accent tracking-[0.2em] uppercase mb-3">
+              Life Beyond the Screen
+            </p>
+
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
+
+              <div>
+                <h2 class="reveal d1 font-display font-bold text-4xl md:text-5xl text-zinc-900 dark:text-white">
+                  Beyond the Code<span class="text-accent">.</span>
+                </h2>
+
+                <p
+                  class="reveal d2 mt-4 max-w-2xl text-sm md:text-base leading-relaxed text-zinc-500 dark:text-zinc-400">
+                  A collection of moments, conversations, and experiences
+                  that reflect my professional journey, collaborative
+                  mindset, and continuous growth.
+                </p>
+              </div>
+
+              <span class="text-sm text-zinc-500 dark:text-zinc-400 shrink-0">
+                People. Ideas. Experiences.
+              </span>
+
+            </div>
+          </div>
+
+
+          <!-- Gallery Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- Office Moments -->
+            <article class="group">
+
+              <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-zinc-200 dark:bg-zinc-800">
+
+                <img src="assets/images/gallery/Professional6.png"
+                  alt="A candid moment in a professional office environment" loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                <span
+                  class="absolute top-4 left-4 text-xs font-medium text-white bg-black/35 backdrop-blur-md rounded-full px-3 py-1.5">
+                  Everyday Life
+                </span>
+
+                <div class="absolute bottom-5 left-5 right-5">
+                  <h3 class="text-xl font-semibold text-white">
+                    Office Moments
+                  </h3>
+                  <p class="text-sm text-white/80 mt-1">
+                    The little moments behind meaningful work.
+                  </p>
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- One-to-One Discussion -->
+            <article class="group">
+
+              <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-zinc-200 dark:bg-zinc-800">
+
+                <img src="assets/images/gallery/Professional3.png"
+                  alt="Colleagues having a one-to-one professional discussion" loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                <span
+                  class="absolute top-4 left-4 text-xs font-medium text-white bg-black/35 backdrop-blur-md rounded-full px-3 py-1.5">
+                  Collaboration
+                </span>
+
+                <div class="absolute bottom-5 left-5 right-5">
+                  <h3 class="text-xl font-semibold text-white">
+                    1:1 Discussions
+                  </h3>
+                  <p class="text-sm text-white/80 mt-1">
+                    Learning through conversations and feedback.
+                  </p>
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- Team Meetings -->
+            <article class="group">
+
+              <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-zinc-200 dark:bg-zinc-800">
+
+                <img src="assets/images/gallery/Professional4.png" alt="A professional team collaborating in a meeting"
+                  loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                <span
+                  class="absolute top-4 left-4 text-xs font-medium text-white bg-black/35 backdrop-blur-md rounded-full px-3 py-1.5">
+                  Teamwork
+                </span>
+
+                <div class="absolute bottom-5 left-5 right-5">
+                  <h3 class="text-xl font-semibold text-white">
+                    Team Meetings
+                  </h3>
+                  <p class="text-sm text-white/80 mt-1">
+                    Aligning ideas, priorities, and goals.
+                  </p>
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- Brainstorming -->
+            <article class="group">
+
+              <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-zinc-200 dark:bg-zinc-800">
+
+                <img src="assets/images/gallery/Professional2.png"
+                  alt="Colleagues brainstorming ideas in a collaborative workspace" loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                <span
+                  class="absolute top-4 left-4 text-xs font-medium text-white bg-black/35 backdrop-blur-md rounded-full px-3 py-1.5">
+                  Creative Thinking
+                </span>
+
+                <div class="absolute bottom-5 left-5 right-5">
+                  <h3 class="text-xl font-semibold text-white">
+                    Ideas in Action
+                  </h3>
+                  <p class="text-sm text-white/80 mt-1">
+                    Exploring possibilities and solving problems.
+                  </p>
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- Knowledge Sharing -->
+            <article class="group">
+
+              <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-zinc-200 dark:bg-zinc-800">
+
+                <img src="assets/images/gallery/Professional5.png" alt="Professionals sharing knowledge in an office"
+                  loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                <span
+                  class="absolute top-4 left-4 text-xs font-medium text-white bg-black/35 backdrop-blur-md rounded-full px-3 py-1.5">
+                  Growth
+                </span>
+
+                <div class="absolute bottom-5 left-5 right-5">
+                  <h3 class="text-xl font-semibold text-white">
+                    Knowledge Sharing
+                  </h3>
+                  <p class="text-sm text-white/80 mt-1">
+                    Growing together through shared experience.
+                  </p>
+                </div>
+
+              </div>
+
+            </article>
+
+
+            <!-- Professional Journey -->
+            <article class="group">
+
+              <div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-zinc-200 dark:bg-zinc-800">
+
+                <img src="assets/images/gallery/Professional7.png"
+                  alt="A professional milestone or career development moment" loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                <span
+                  class="absolute top-4 left-4 text-xs font-medium text-white bg-black/35 backdrop-blur-md rounded-full px-3 py-1.5">
+                  Milestones
+                </span>
+
+                <div class="absolute bottom-5 left-5 right-5">
+                  <h3 class="text-xl font-semibold text-white">
+                    The Journey
+                  </h3>
+                  <p class="text-sm text-white/80 mt-1">
+                    Every experience is another step forward.
+                  </p>
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- Closing Note -->
+          <div class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+              Great work is about more than code. It's about people,
+              shared ideas, meaningful conversations, and the willingness
+              to keep learning.
+            </p>
 
           </div>
 
